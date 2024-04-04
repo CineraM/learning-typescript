@@ -1,0 +1,45 @@
+.home{
+    background-color: var(--main-color);
+    overflow: hidden;
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+// scroll bar stuff
+::-webkit-scrollbar{
+    cursor: pointer;
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: #334756;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FF4C29;
+}
+
+.loader {
+    margin: auto;
+    height: 100vh;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #FF4C29;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  
