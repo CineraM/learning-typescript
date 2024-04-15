@@ -97,12 +97,11 @@ const Featured = () => {
       
             </div>
         </div>
-        ) : (
-          <p>Loading anime data...</p> // Or display a loading indicator
+        ) : (    
+            <div className="loader"></div>
         )}
       </div>
     );
-
 }
 
 export default Featured
